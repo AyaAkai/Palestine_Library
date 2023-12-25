@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla&family=Raleway&family=Ubuntu:ital@1&display=swap');
+*{
+    font-family: 'Raleway', sans-serif;
+    padding:0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background-color: rgba(204, 204, 213, 0.57);
+}
+img{
+    width: 140px;
+    height: 100px;
+    padding-left: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    background-image: linear-gradient(to right, rgb(255, 0, 0) 0.5% ,rgba(0, 0, 0, 0.733), rgba(239, 232, 232, 0.952),rgba(0, 128, 0, 0.892));
+    height: 80px;
+    border-bottom: 1px solid;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 6px;
+    text-transform: uppercase;
+}
+nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 7px;
+}
+.navbar{
+    padding-right:50px;
+}
+nav ul li a:hover,nav ul li a:active{
+    border-bottom: 2px solid;
+    border-radius: 5px;
+    background-image:linear-gradient(to right, rgba(255, 0, 0, 0.703) 0.5% ,rgba(0, 0, 0, 0.703), rgba(239, 232, 232, 0.878),rgba(0, 128, 0, 0.801)) ;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.menu{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+    right: 5%;
+}
+.first{
+    padding: 110px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+hr {
+    background-image:linear-gradient(to right, rgba(255, 0, 0, 0.703) 0.5% ,rgba(0, 0, 0, 0.703), rgba(239, 232, 232, 0.878),rgba(0, 128, 0, 0.801)) ;
+    height: 2px;
+    width: 80%;
+    margin: auto;
+}
+#btn1{
+    background-color: black;
+    color: white;
+    height: fit-content;
+    padding: 10px 20px;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+#btn1:hover{
+    cursor:pointer;
+    color: red;
+    letter-spacing: 3px;
+    background-color: transparent;
+}
+#btn1 span{
+    position: absolute;
+    display: block;
+    background: red;
+}
+#btn1 span:nth-child(1){
+    left: 0;
+    top: 0;
+    width: 50.5%;
+    height: 3px;
+    transform: scaleX(0);
+    transition: transform 0.5s ;
+}
+#btn1:hover span:nth-child(1){
+    transform: scaleX(1);
+    transform-origin: right;
+}
+#btn1 span:nth-child(2){
+    right: 0;
+    top: 0;
+    width: 50.5%;
+    height: 3px;
+    transform: scaleX(0);
+    transition: transform 0.5s ;
+    background: green;
+
+}
+#btn1:hover span:nth-child(2){
+    transform: scaleX(1);
+    transform-origin: left;
+}
+#btn1 span:nth-child(3){
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    transform: scaleY(0);
+    transition: transform 0.5s ;
+}
+#btn1:hover span:nth-child(3){
+    transform: scaleY(1);
+    transform-origin: top;
+    transition-delay: 0.4s;
+}
+#btn1 span:nth-child(4){
+    right: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    transform: scaleY(0);
+    transition: transform 0.5s ;
+    background: green;
+}
+#btn1:hover span:nth-child(4){
+    transform: scaleY(1);
+    transform-origin: top;
+    transition-delay: 0.4s;
+}
+#btn1 span:nth-child(5){
+    left: 0;
+    bottom: 0;
+    width: 50.5%;
+    height: 3px;
+    transform: scaleX(0);
+    transition: transform 0.5s ;
+    transition-delay: 0.5s;
+}
+#btn1:hover span:nth-child(5){
+    transform: scaleX(1);
+    transform-origin: right;
+    background: black;
+}
+#btn1 span:nth-child(6){
+    right: 0;
+    bottom: 0;
+    width: 50.5%;
+    height: 3px;
+    transform: scaleX(0);
+    transition: transform 0.5s ;
+    transition-delay: 0.5s;
+
+}
+#btn1:hover span:nth-child(6){
+    transform: scaleX(1);
+    transform-origin: left;
+    background: black;
+}
+div.description{
+    width: 80%;
+    margin: auto;
+    line-height: 30px;
+}
+div.description h3{
+    margin: 15px 0 3px 0;
+}
+div.description h1{
+    margin: 20px 0 8px 0;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+   }
+   .modal-content {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    position: relative;
+   }
+   .modal-content label{
+    font-size: 16px;
+   }
+   .modal-content input{
+    border: 1px solid #000;
+ padding: 5px;
+ border-radius: 3px;
+   }
+   .modal input[type="text"]:focus {
+    border-color: #0077cc;
+    outline: none;
+   }
+   .modal button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: absolute;
+    right: 0;
+}
+   
+   .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+position: absolute;
+right: 0;
+top: 0;
+padding-right: 10px;
+   }
+
+   .close:hover,
+   .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+   }
+#uploadBookForm{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+
+.persons{
+    margin: 80px auto;
+    display: flex;
+    width: 80%;
+}
+.person{
+    position: relative;
+    margin: auto;
+}
+.imageper{
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+.overlayPerson{
+    height: 100%;
+    width: 91%;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.559);
+    color: whitesmoke;
+    letter-spacing: 1px;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(25px);
+    transition:  0.6s;
+    opacity: 0;
+}
+.overlayPerson:hover{
+    transform: translateY(0px);
+    opacity: 1;
+    cursor: pointer;
+}
+.overlayPerson h3{
+    font-size: 20px;
+}
+.overlayPerson p{
+    font-size: 14px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.books{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+.flip-card {
+    perspective: 1000px; 
+    width: 80%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+  }
+  /* Style for the inner part of the flip card */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Styles for the front side of the card */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style for the front side of the card */
+  .flip-card-front {
+    height: 100%;
+    width: 100%;
+  }
+  .flip-card-front img{
+    height: 200px;
+  }
+  /* Style for the back side of the card */
+  .flip-card-back {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.551) 0.5% ,rgba(0, 0, 0, 0.447), rgba(239, 232, 232, 0.775),rgba(0, 128, 0, 0.523));
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+    margin: 0 20px;
+  }
+  /* On hover, flip the card */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+
+footer {
+    color: #000000;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    border-top: rgba(128, 128, 128, 0.381) solid;
+    bottom: 0;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h2 {
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    color: green;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+    color: #ff0000;
+}
+
+
+@media (max-width: 900px){
+    nav{
+        height: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+        font-weight: 200;
+    }
+}
+@media (max-width: 750px){
+    /*
+   .menu{
+    display: block;
+   }
+   .navbar{
+    position: absolute;
+    top: 7.4%;
+    left: 0;
+    width: 100%;
+    height: 180px;
+background: rgb(0,0,0,.1);
+backdrop-filter: blur(50px);
+ }
+   nav ul li{
+    display: block;
+    margin: 20px;
+    text-align: center;
+}
+*/
+.first{
+   flex-direction: column;
+   justify-content: space-between;
+}
+#btn1{
+    margin-top: 20px;
+}
+.persons{
+    flex-wrap: wrap;
+}
+.person{
+    margin-top: 15px;
+}
+.imageper{
+    width: 300px;
+    height: 300px;
+}
+.overlayPerson{
+    height: 100%;
+    width: 94%;
+}
+.flip-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .flip-card-inner {
+    margin: 100px;
+  }
+  .flip-card-back {
+    width: 200px;
+    height: fit-content;
+}
+#uploadBookForm{
+    flex-direction: column;
+    align-items: center;
+}
+.modal-content {
+    margin: 50% auto;
+   }
+   .modal button{
+    position: relative;
+    width: 100%;
+}
+.modal-content input{
+    width: 100%;
+   }
+}

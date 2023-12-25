@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Palestine library</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <div class="logo"><a href="#"><img src="../images/Brown_and_Beige_Modern_Bookstore_Logo-removebg-preview.png" alt="Logo"></a></div>
+                <div class="menu"><i class='bx bx-menu'></i><i class='bx bx-x'></i></div>
+
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">feedback</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="first">
+                    <div class="text1">
+                        <h1>Welcome to Palestine Library!</h1>
+                        <p>We are a nonprofit organization dedicated to providing free access to books and educational materials for all people. </p>
+                        <p>You can add content or upload books through this button...</p>
+                    </div>
+                    <a href="#" id="btn1" onclick="document.getElementById('myForm').style.display='block'">Upload Book
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </a>
+                    <div id="myForm" class="modal">
+                        <div class="modal-content">
+                          <span onclick="document.getElementById('myForm').style.display='none'" class="close">&times;</span>
+                          <form id="uploadBookForm" action="upload.php" method="post" enctype="multipart/form-data">
+                            <label for="bookName">Book Name:</label><br>
+                            <input type="text" id="bookName" name="bookName" required><br>
+                            <label for="authorName" >Author Name:</label><br>
+                            <input type="text" id="authorName" name="authorName" required><br>
+                            <label for="bookFile">Upload Book:</label><br>
+                            <input type="file"  id="bookFile" name="pdfFile" accept=".pdf, .doc, .docx" required><br>
+                            <button name="submit" type="submit" value="Upload">SUBMIT</button>
+                          </form>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <hr>
+            <div>
+              <div class="description" style="width: 80%;
+              margin: auto;
+              line-height: 30px;">
+    
+    <p> <h3 style="margin: 15px 0 3px 0;">How did the conflict start?</h3>
+                  Britain took control of Palestine after defeating the Ottoman Empire, which ruled this part of the Middle East, in World War I.
+                  
+                  This land was inhabited by an Arab majority and a Jewish minority.
+                  
+                  <h3 style="margin: 15px 0 3px 0;">The Gaza War: Will the Arab Street’s position change its course?</h3>
+                  
+                  
+                  Tensions grew between the two sides when the international community gave Britain the task of establishing a “national homeland” for the Jewish people in Palestine, which for the Jews represents the land of their ancestors, and the same is also the case for the Palestinian Arabs who see it as their land, so they opposed this step.
+                  
+                  In the period between the 1920s and the 1940s, the number of Jews coming to Palestine increased, many of whom were fleeing the religious persecution they were subjected to in Europe, searching for a homeland in the wake of what was known as the Holocaust in World War II.
+                  
+                  Violence also grew between Jews and Arabs or against British rule in the region.
+                  
+                  In 1947, the United Nations voted on a resolution to divide Palestine into two separate states, one Jewish and the other Arab, with Jerusalem becoming an international city.
+                  
+                  The Jewish leaders agreed to this plan, which was rejected by the Arab side. It was never implemented.</p>
+                  <p> <h3 style="margin: 15px 0 3px 0;">What is the Gaza Strip?</h3>
+                    The Gaza Strip is an area in the form of a narrow strip, 41 kilometers (25 miles) long and 10 kilometers wide. It is located between Israel, Egypt, and the Mediterranean Sea. It is inhabited by about 2.3 million Palestinians, and is considered one of the regions with the highest population density in the world.
+                    
+                    Following the 1948-49 war, Egypt occupied Gaza for 19 years.
+                    
+                    In the 1967 war, Israel occupied the Gaza Strip and remained there until 2005, during which time it built Jewish settlements.
+                    
+                    Although Israel withdrew its forces and settlers from Gaza in 2005, it still controls its airspace, common borders, and beaches. The United Nations still considers the area occupied by Israel.</p>
+
+                    <p> <h1 style="color: red;">WARNING...</h1> <h3 style="margin: 15px 0 3px 0;">Shrouds are not enough...the tears do not stop, Palestine</h3>
+                      We suffer from a shortage of shrouds.. A word of appeal from the Palestinian Red Crescent to express, describe and summarize the tragic situation that the Gaza Strip has reached in beloved Palestine.. A word that came out to tear the hearts of people everywhere.. A word that was mentioned to burst with it a river of non-stop tears from the eyes. ...the lives of thousands of Palestinians, “children, women, youth, and the elderly,” as a result of the brutal Israeli aggression on the Gaza Strip.
+
+What is happening on the Palestinian territories as a result of the brutal Israeli attacks that claimed the lives of nearly 5,000 Palestinian civilians, who do not have weapons to confront the bombing launched by the forces of the occupying army occupying the Palestinian territories, in addition to preventing the arrival of supplies sufficient to suffice their needs of food, medicine, and fuel, in implementation Forcible displacement process led by the Israeli occupation state.</p>
+            </div>
+            </div>
+            <hr>
+            <div class="persons">
+                <div class="person">
+                    <img class="imageper p1" src="../images/800px-Fatima_diab.png" alt="Fatima_Ziab">
+                    <div class="overlayPerson">
+                        <h3>فاطمة ذياب </h3>
+                        <p>ولدت الكاتبة في طمرة الجليل .</p>
+                    </div>
+                </div>
+                <div class="person">
+                    <img class="imageper p2" src="../images/Ahmad_Rafic_Awad,_4D_Media_Production_-_Aug_30,_2012.jpg" alt="Fatima_Ziab">
+                    <div class="overlayPerson">
+                        <h3>احمد رفيق عوض</h3>
+                        <p>  كاتب قصصي فلسطيني </p>
+                    </div>
+                </div>
+                <div class="person">
+                    <img class="imageper p3" src="../images/سامر_أبو_هواش.jpg" alt="Fatima_Ziab">
+                    <div class="overlayPerson">
+                        <h3>سامر أبو هواش</h3>
+                        <p>كاتب وشاعر ومترجم فلسطيني.</p>
+                    </div>
+                </div>
+                <div class="person">
+                    <img class="imageper p3" src="../images/Ziad_Khaddash.jpg" alt="Fatima_Ziab">
+                    <div class="overlayPerson">
+                        <h3>زياد مصطفى خليل خداش</h3>
+                        <p>هو كاتب قصة فلسطيني</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+                  <div class="books">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="../images/302235-غسان.jpg"  alt="Book 1">
+                      </div>
+                      <div class="flip-card-back">
+                        <h2>عائد الى حيفا</h2>
+                          <p>تعد سحر خليفة واحدة من أهم الأصوات النسائية الفلسطينية التي استطاعت أن تعبّر عن القضية، وتصوّر بأدق التفاصيل الكثير من تاريخ القضية الفلسطينية وتغيراتها، بدأت ذلك منذ روايتها الأولى “لم نعد جواري لكم” عام 1974 ورواية “صورة وأيقونة وعهد قديم”</p>
+                      </div>
+                    </div>
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="../images/ربيع_الحار.jpg" alt="Book 1">
+                        </div>
+                        <div class="flip-card-back">
+                          <h2>ربيع_الحار</h2>
+                            <p>استطاع غسان كنفاني أن يحفر اسمه منذ وقتٍ مبكر في أدب المقاومة الفلسطينية وذلك لقدرته الفائقة على التعبير عنها بوضوح، وهو رغم قلة إنتاجه ووفاته المبكرة إلا أنه كان حريصًا على التعبير عن كفاح الشعب الفلسطيني ومقاومته للمحتل، وهو ما أدى إلى اغتياله على أيدي عملاء الموساد في بيروت. كتب غسان كنفاني عددًا من الكتابات االنقدية والأدبية التي شكلت وعي الأمة العربية</p>
+                        </div>
+                      </div>
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="../images/اعراس_امنة.jpg" alt="Book 1">
+                        </div>
+                        <div class="flip-card-back">
+                          <h2>أعراس_آمنة</h2>
+                            <p> يعد مشروع الروائي الفلسطيني الكبير إبراهيم نصر الله “الملهاة الفلسطينية” واحدًا من أهم مشاريع توثيق القضية الفلسطينية إنسانيًا من خلال التقاط لمحات شديدة الخصوصية من ماضي فلسطين وحاضرها وسردها روائيًا بشاعرية بالغة، كتب إبراهيم نصر الله في مشروع الملهاة نحو إحدى عشرة رواية، تنتقل في الزمان والمكان ما بين تاريخ فلسطين القديم في “زمن الخيول البيضاء” و”قناديل ملك الجليل”</p>
+                        </div>
+                      </div>
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="../images/البحث_عن_وليد.jpg" alt="Book 1">
+                        </div>
+                        <div class="flip-card-back">
+                          <h2>البحث عن وليد مسعود</h2>
+                            <p>يكتب المثقف والروائي الفلسطيني الكبير جبرا إبراهيم جبرا روايته عن بطله الفلسطيني “وليد مسعود” الذي يسعى لأسطرته ليكون نموذجًا للمثقف والمناضل الفلسطيني في الغربة، وليس وليد مسعود ببعيدٍ عن جبرا ورحلة حياته، وهو المولود في فلسطين، والذي اضطر لتركها بعد النكبة وعاش في بغداد إلا أن ذكرياته وكل تفاصيل حياته مرتبطة بالقدس وبفلسطين، من هنا جاءت روايته معبرة عن ذلك الوجع الفلسطيني </p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                  <footer>
+                <div class="footer-section">
+                    <h2>Contact</h2>
+                    <p>Email: info@library.com</p>
+                    <p>Phone: +1-234-567-890</p>
+                </div>
+                <div class="footer-section">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Opening Hours</h2>
+                    <p>Sunday to Thursday: 9:00 AM - 6:00 PM</p>
+                    <p>Tuesday: 10:00 AM - 4:00 PM</p>
+                    <p>Friday: Closed</p>
+                </div>
+            </footer>
+        </div>
+        <script src="../js/main.js"></script>
+    </body>
+</html>
